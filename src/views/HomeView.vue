@@ -1,13 +1,15 @@
 <template>
-  <div class="home">
-    <h1 class="text-red-800">HelloWorld</h1>
+  <div>
+    <main-navbar />
   </div>
 </template>
 
 <script lang="ts">
+import MainNavbar from "@/components/MainNavbar.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  components: { MainNavbar },
   name: "HomeView",
 });
 </script>
