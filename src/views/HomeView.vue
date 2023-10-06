@@ -2,7 +2,7 @@
   <div>
     <main-navbar />
     <list-filter />
-    <div class="container my-10 grid grid-cols-4 gap-x-1 gap-[40px]">
+    <div class="container my-12 grid grid-cols-4 gap-x-1 gap-[40px]">
       <recept-card />
       <recept-card />
       <recept-card />

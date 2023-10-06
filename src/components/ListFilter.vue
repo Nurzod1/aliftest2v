@@ -20,7 +20,7 @@ export default defineComponent({});
       <div class="flex justify-center items-center mt-5 gap-5">
         <p class="text-sky-700 font-bold">Сортировать</p>
         <select
-          class="bg-neutral-800 filter-form__select py-1.5 px-2.5 rounded"
+          class="bg-neutral-800 outline-none filter-form__select py-1.5 px-2.5 rounded"
         >
           <option>По дате создания</option>
           <option>По дате изменения</option>
