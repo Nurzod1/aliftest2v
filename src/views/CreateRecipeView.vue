@@ -1,12 +1,12 @@
 <script lang="ts">
-import CreateRecept from "@/components/CreateRecept.vue";
+import CreateRecipe from "@/components/CreateRecipe.vue";
 import MainNavbar from "@/components/MainNavbar.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
-  components: { CreateRecept, MainNavbar },
+  components: { CreateRecipe, MainNavbar },
 });
 </script>
 <template>
   <main-navbar />
-  <create-recept />
+  <create-recipe />
 </template>
