@@ -4,7 +4,7 @@ export default defineComponent({});
 </script>
 <template>
   <div
-    class="card text-gray-100 bg-neutral-800 w-fit rounded-[10px] max-w-[315px] max-h-[496px] w-[315px] border border-solid border-white border-neutral-700 cursor-pointer transition-all ease-in hover:border-neutral-500"
+    class="card text-gray-100 bg-neutral-800 w-fit rounded-[10px] max-w-[315px] max-h-[496px] w-[315px] border border-solid border-neutral-700 cursor-pointer transition-all ease-in hover:border-neutral-500"
   >
     <div class="w-[315px] h-[231px] max-w-[313px]">
       <img class="w-full h-full" src="@/assets/img/Rectangle.png" alt="" />
