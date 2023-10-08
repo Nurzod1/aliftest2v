@@ -1,7 +1,4 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({});
-</script>
+<script lang="ts" setup></script>
 <template>
   <div class="bg-neutral-950 h-36 md:h-52">
     <div class="container">
@@ -12,7 +9,7 @@ export default defineComponent({});
         class="flex justify-center gap-4 text-violet-600 text-sm md:text-base"
       >
         <router-link to="/">Список рецептов</router-link>
-        <router-link to="/create-recept-view">Добавить рецепт</router-link>
+        <router-link to="/create-recipe-view">Добавить рецепт</router-link>
       </div>
     </div>
   </div>

@@ -1,7 +1,4 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({});
-</script>
+<script lang="ts" setup></script>
 <template>
   <div class="container">
     <div class="text-white mt-[-21px] md:mt-[-28px]">

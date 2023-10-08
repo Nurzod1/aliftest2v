@@ -1,14 +1,13 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({});
-</script>
+<script lang="ts" setup></script>
 <template>
-  <div class="container text-neutral-200 mt-10">
+  <div class="container text-neutral-200 my-10">
     <form>
-      <div class="flex justify-center gap-16">
-        <div>
+      <div
+        class="flex justify-center flex-col items-center lg:items-start lg:flex-row gap-8 lg:gap-16"
+      >
+        <div class="flex flex-col items-center">
           <div
-            class="overflow-hidden w-[390px] h-[252px] max-w-[390px] rounded-xl"
+            class="overflow-hidden w-[310px] lg:w-[390px] lg:h-[252px] max-w-[390px] rounded-xl"
           >
             <img
               class="max-w-full max-h-full"
@@ -31,15 +30,15 @@ export default defineComponent({});
             <!-- <button class="btn btn-primary btn-block">Загрузить</button> -->
           </div>
         </div>
-        <div class="flex flex-col gap-3 max-w-[430px]">
+        <div class="flex flex-col gap-3 w-full lg:max-w-[430px]">
           <input
-            class="outline-none bg-neutral-800 h-10 w-[430px] rounded-lg border border-black border-solid placeholder-gray-600 px-5 transition-all ease-in focus:border-neutral-700"
+            class="outline-none bg-neutral-800 h-10 w-full lg:w-[430px] rounded-lg border border-black border-solid placeholder-gray-600 px-5 transition-all ease-in focus:border-neutral-700"
             type="text"
             placeholder="Введите название"
           />
           <div class="flex items-center">
             <input
-              class="outline-none bg-neutral-800 h-10 w-[390px] rounded-l-lg border border-r-[0px] border-black border-solid placeholder-gray-600 px-5 transition-all ease-in focus:border-neutral-700"
+              class="outline-none bg-neutral-800 h-10 w-full lg:w-[390px] rounded-l-lg border border-r-[0px] border-black border-solid placeholder-gray-600 px-5 transition-all ease-in focus:border-neutral-700"
               type="text"
               placeholder="Введите ингредиент"
             />
@@ -301,7 +300,7 @@ export default defineComponent({});
             </div>
           </div>
           <textarea
-            class="outline-none bg-neutral-800 h-[105px] w-[430px] rounded-lg border border-black border-solid placeholder-gray-600 px-4 py-1 transition-all ease-in focus:border-neutral-700"
+            class="outline-none bg-neutral-800 h-[105px] w-full lg:w-[430px] rounded-lg border border-black border-solid placeholder-gray-600 px-4 py-1 transition-all ease-in focus:border-neutral-700"
             placeholder="Введите описание"
           ></textarea>
           <div class="flex items-center gap-5">
@@ -318,7 +317,7 @@ export default defineComponent({});
             </select>
           </div>
           <button
-            class="bg-sky-700 w-full h-14 rounded-lg border border-black border-solid transition-all ease-in hover:bg-sky-600"
+            class="bg-sky-700 w-full h-10 md:h-14 rounded-lg border border-black border-solid transition-all ease-in hover:bg-sky-600"
           >
             Создать рецепт
           </button>

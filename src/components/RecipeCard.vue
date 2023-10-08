@@ -1,12 +1,17 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({});
+<script lang="ts" setup>
+import { ref } from "vue";
+let show = ref(false);
+
+const showList = () => {
+  console.log(show.value);
+  show.value = !show.value;
+};
 </script>
 <template>
   <div
     class="card text-gray-100 bg-neutral-800 w-fit rounded-[10px] max-w-[303px] md:max-w-[315px] max-h-[496px] w-[315px] border border-solid border-neutral-700 cursor-pointer transition-all ease-in hover:border-neutral-500"
   >
-    <div class="w-[315px] h-[231px] max-w-[301px] md:max-w-[313px]">
+    <div class="w-[315px] h-[231px] max-w-[301px] md:max-w-[312px]">
       <img class="w-full h-full" src="@/assets/img/Rectangle.png" alt="" />
     </div>
     <div class="px-2.5 py-4">
@@ -35,11 +40,14 @@ export default defineComponent({});
       </div>
       <div>
         <p class="mt-1 text-lg font-bold">Американские блины</p>
-        <p class="text-sm mt-1">Ингредиенты:</p>
-        <span class="line-clamp-2 text-xs mt-0.5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          distinctio? Eaque iure iusto fugit dolorem veniam.
-        </span>
+        <div>
+          <div class="text-sm mt-1" @click="showList()">Ингредиенты:</div>
+          <div v-if="show">
+            <ul class="text-xs mt-0.5">
+              <li>Сахар</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="flex flex-col mt-5 gap-2">
         <button
