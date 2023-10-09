@@ -4,12 +4,10 @@ let showModalDelete = ref(false);
 let showModalEdit = ref(false);
 
 const openModalEdit = () => {
-  console.log("showModalEdit", showModalEdit);
   showModalEdit.value = true;
 };
 
 const openModalDelete = () => {
-  console.log("showModalDelete", showModalDelete);
   showModalDelete.value = true;
 };
 

@@ -7,11 +7,11 @@ const showList = () => {
   show.value = !show.value;
 };
 
-let showModalDelete = ref(false);
-let showModalEdit = ref(false);
-
-console.log(showModalEdit);
-console.log(showModalDelete);
+const onClickOutside = () => {
+  if (!show.value) return;
+  show.value = false;
+  console.log("hello", show.value);
+};
 </script>
 <template>
   <div
@@ -49,7 +49,7 @@ console.log(showModalDelete);
         <div class="relative">
           <div class="flex items-center gap-1 text-sm mt-1">
             <span>Ингредиенты:</span>
-            <button @click="showList()">
+            <button @click.stop="showList()">
               <svg
                 width="15"
                 height="15"
@@ -66,10 +66,12 @@ console.log(showModalDelete);
               </svg>
             </button>
           </div>
-          <div v-if="show">
-            <ul
-              class="absolute text-xs bg-neutral-700 mt-0.5 top-5 left-24 p-2 leading-5 rounded w-fit"
-            >
+          <div
+            v-if="show"
+            class="absolute text-xs bg-neutral-700 mt-0.5 top-5 left-24 p-2 leading-5 rounded w-fit"
+            v-click-outside="() => onClickOutside()"
+          >
+            <ul>
               <li>Сахар</li>
               <li>Пшеничная мука</li>
               <li>Гашенная сода</li>
